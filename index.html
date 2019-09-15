@@ -9,11 +9,16 @@
   <script type="text/javascript" src="./node_modules/moment-precise-range-plugin/moment-precise-range.js"></script>
 </head>
 <body>
+  <div class="nameContainer">
+    <p class="name"></p>
+  </div>
   <div class="countdown"></div>
   <script type="text/javascript">
+    window.name = prompt('What is your name?')
     window.birthday = prompt('What is your birthday? MM/DD/YYYY')
     // invoke displayAge once
     displayAge()
+    document.querySelector('.name').textContent = `${window.name}'s current age:`
     // invoke displayAge on an interval once a second
     setInterval(displayAge, 1000)
     function displayAge(){

@@ -1,12 +1,21 @@
 body{
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 100%;
   background-color: purple;
 }
-
-.countdown{
+.nameContainer {
+  margin: 20px;
+}
+.name {
+  color: yellow;
+  font-size: 50px;
+  width: 900px;
+  text-align: center;
+}
+.countdown {
   color: yellow;
   font-size: 50px;
 }
